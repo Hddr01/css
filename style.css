@@ -1,0 +1,122 @@
+body {
+    color: aliceblue;
+    background: rgb(31, 31, 31);
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;    
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 7vh;
+    background-color: #333;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    width: 30%;
+}
+
+.nav_links a {
+    background-color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav_links li {
+    list-style: none;
+}
+
+h4 {
+    font-size: 25px;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+}
+
+.burgger{
+    display: none;
+    cursor: pointer;
+}
+
+.burgger div {
+    width: 25px;
+    height: 5px;
+    margin: 5px;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width:1024px) {
+    .nav_links {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body{
+        overflow: hidden;
+    }
+    .nav_links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(41, 40, 40);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translate(100%);
+        transition: transform 0.2s ease-in;
+    }
+    .nav_links li{
+        opacity: 0;
+    }
+    .burgger {
+        display: block;
+    }
+}
+
+.nav_active {
+    transform: translate(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.content{
+    color: aliceblue;
+}
+.container {
+    width: 1100px;
+    height: 1000px;
+    margin: 0% auto;
+    background-color: #333;
+}
+
+
