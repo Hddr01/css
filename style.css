@@ -21,18 +21,18 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 7vh;
-    background-color: #333;
+    background-color: rgb(34, 34, 34);
 }
 
 .nav_links {
     display: flex;
     justify-content: space-around;
-    background-color: #333;
+    background-color: rgb(34, 34, 34);
     width: 30%;
 }
 
 .nav_links a {
-    background-color: #333;
+    background-color: rgb(34, 34, 34);
     text-decoration: none;
     font-weight: bold;
 }
@@ -43,7 +43,7 @@ nav {
 
 .logo .home {
     font-size: 18px;
-    background-color: #333;
+    background-color: rgb(34, 34, 34);
     cursor: pointer;
 }
 
@@ -78,7 +78,7 @@ a {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: rgb(41, 40, 40);
+        background-color: rgb(34, 34, 34);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -110,14 +110,16 @@ a {
 }
 
 .content{
-    color: aliceblue;
+    color:  rgb(211, 211, 211);
 }
+
+
 
 .container {
     width: 1100px;
     height: 1600px;
     margin: 0% auto;
-    background-color: rgb(50, 31, 31);
+    /* background-color: rgb(50, 31, 31);1 */
     margin-top: 60px;
     border-radius: 10px;
 }
@@ -128,27 +130,27 @@ a {
     position: absolute;
     display: flex;
     border-radius: 10px;
-    background-color: #333;
+    background-color: rgb(34, 34, 34);
     margin-left: 790px;
     margin-top: 30px;
 }
 
 .container .top_weeks {
-    font-size: 13px;
+    font-size: 12px;
     cursor: pointer;
-    margin-left: 55px;
+    margin-left: 60px;
     margin-top: 10px;
 }
 
 .container .top_months {
-    font-size: 13px;
+    font-size: 12px;
     cursor: pointer;
     margin-left: 25px;
     margin-top: 10px;
 
 }
 .container .all {
-    font-size: 13px;
+    font-size: 12px;
     cursor: pointer;
     margin-left: 30px;
     margin-top: 10px;
@@ -159,7 +161,7 @@ a {
     width: 773px;
     position: absolute;
     display: flex;
-    background-color: #333;
+    background-color: rgb(34, 34, 34);
     border-radius: 10px;
     margin-top: 30px;
     margin-left: 10px;
@@ -168,13 +170,32 @@ a {
 .Recently_published .rp {
     margin-left: 10px;
     margin-top: 10px;
-    font-size: 13px;
+    font-size: 12px;
+    color: rgb(211, 211, 211);
 }
 
-.hr1 hr {
+.container .hr1 {
+    height: 1px;
     width: 300px;
-    margin-left: 790px;
-    margin-top: 500px;
+    background-color:  rgb(97, 97, 97);
+    display: block;
+    position: absolute;
+    margin-top: 30px;
 }
 
+.Recently_published .hr2 {
+    height: 1px;
+    width: 773px;
+    display: block;
+    position: absolute;
+    background-color: rgb(97, 97, 97);
+    margin-top: 30px;
+}
 
+.hr3 {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(97, 97, 97);
+    display: block;
+    position: absolute;
+}
