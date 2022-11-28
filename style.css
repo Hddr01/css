@@ -27,14 +27,13 @@ nav {
 .nav_links {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(34, 34, 34);
     width: 30%;
+    overflow: hidden;
 }
 
 .nav_links a {
     background-color: rgb(34, 34, 34);
     text-decoration: none;
-    font-weight: bold;
 }
 
 .nav_links li {
